@@ -1,0 +1,182 @@
+body{
+    background-image: url(black_background.jpg);
+    max-width: 800px;
+    margin:fit-content;
+    overflow-x: hidden;
+    
+    
+}
+
+.container{
+    margin-top: 30px;
+}
+
+.logo{
+    float:left;
+    height: auto;
+    margin-top: 30px;
+    margin-left: -40px;
+    cursor: pointer;
+
+}
+
+
+.top-items ul {
+    width: 20%;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin-left: 700px;
+    text-align: right
+
+
+}
+
+
+
+
+/*.about{
+    margin-right: 100px;
+    margin-top: -10px;
+}*/
+
+/*.contact{
+    margin-right: -70px;
+    margin-top: -40px;
+}
+*/
+
+#profile {
+    float: right;
+    margin-right: 400px;
+    margin-left: 1050px; /* Adjust the value as needed */
+    margin-top: -2px;
+    margin-bottom: -30px;
+    cursor: pointer;
+}
+
+
+li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+
+#user{
+    margin-top: 20px;
+}
+
+.nav-item{
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+
+}
+
+.navbar-nav{
+    width: 10%;
+    text-align: right;
+    margin-right: 100px;
+}
+
+.navbar{
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 70px;
+}
+
+nav{
+    background:#1a1a1a ;
+    width: 150%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    /*overflow: hidden;*/
+    transition: max_height 0.5s;
+}
+
+
+.sub-menu{
+    background-color:#fff ;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+
+}
+.user-info h2{
+    font-weight: 500;
+    color: #fff;
+
+}
+
+.user-info img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 10px 0;
+
+}
+
+.sub-menu-link p{
+    width: 80%;
+}
+.sub-menu-link img{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.sub-menu-link span{
+    font-size: 10px;
+    transition: transform 0.5s;
+    margin-left: 5px;
+
+}
+
+.sub-menu-link:hover span{
+    transform: translate(5px);
+
+}
+.sub-menu-link:hover p{
+    font-weight: 600 ;
+
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
