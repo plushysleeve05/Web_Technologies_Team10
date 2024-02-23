@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('/Users/macbookpro/Desktop/team_project/background.jpg'); /* Add your background image here */
+    background-image: url('/Users/macbookpro/Desktop/team_project/background.jpg');  
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -13,7 +13,6 @@ body {
     margin: 0 auto;
     margin-top: 50px;
     padding: 20px;
-    /*background-color: #ffffff; /* Ensure solid color for exclusion */
     background-color: rgba(249, 249, 249, 0.3);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
