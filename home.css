@@ -2,7 +2,7 @@ body{
     background-image: url(black_background.jpg);
     max-width: 800px;
     margin:fit-content;
-    overflow-x: hidden;
+    overflow: hidden;
     
     
 }
@@ -35,16 +35,6 @@ body{
 
 
 
-/*.about{
-    margin-right: 100px;
-    margin-top: -10px;
-}*/
-
-/*.contact{
-    margin-right: -70px;
-    margin-top: -40px;
-}
-*/
 
 #profile {
     float: right;
@@ -104,7 +94,7 @@ nav{
     right: 10%;
     width: 320px;
     max-height: 0px;
-    /*overflow: hidden;*/
+    overflow: hidden;
     transition: max_height 0.5s;
 }
 
@@ -123,7 +113,7 @@ nav{
 }
 .user-info h2{
     font-weight: 500;
-    color: #fff;
+    color: black;
 
 }
 
