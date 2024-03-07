@@ -2,7 +2,7 @@ body{
     background-image: url(black_background.jpg);
     max-width: 800px;
     margin:fit-content;
-    overflow: hidden;
+    overflow-x:hidden;
     
     
 }
@@ -210,3 +210,237 @@ nav{
 .search-icon{
     color: rgba(0,0,0,0.25);
 }
+
+
+.homepage-text{
+    margin-left: 380px;
+    margin-top: 100px;
+}
+
+.homepage-text a{
+    text-decoration: none;
+    color: gold;
+
+}
+
+.homepage-signin{
+    margin-left: 420px;
+    margin-top: 150px;
+
+}
+
+
+.homepage-signin a{
+    text-decoration: none;
+    color: gold;
+
+}
+
+
+#home-signup{
+    margin-left: 125px;
+}
+
+.trends{
+    margin-left: 100px;
+}
+
+#RandB{
+    margin-left: 50px;
+
+}
+
+#jazz{
+    margin-left: 50px;
+}
+
+
+
+::-webkit-scrollbar{
+    width: 30px;
+}
+
+::-webkit-scrollbar-track{
+    background: #ccc;
+}
+
+::-webkit-scrollbar-thumb{
+    background:gray;
+    border-radius: 6px;
+}
+
+
+footer{
+    position: relative;
+    width: 154%;
+    height: auto;
+    padding: 50px 30px;
+    background: gold;
+    margin-top: 220px;
+}
+
+
+.page-footer{
+    width:100%;
+    display: grid;
+    grid-template-columns: 7fr 1fr 1fr 1fr ;
+    grid-gap: 100px;
+}
+
+
+.page-footer.about-us h2{
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+
+
+.page-footer.about-us h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height:2px ;
+
+
+}
+.about-us p{
+    font-weight: 500;
+}
+
+
+.sci{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,50px);
+    grid-gap:10px ;
+}
+
+
+.sci li a{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+
+.sci li a:hover{
+    background: black;
+}
+
+
+.sci li a .bx{
+    color: purple;
+    font-size: 20px;
+}
+
+
+
+.quicklinks{
+    position: relative;
+}
+
+
+.quicklinks li{
+    list-style: none;
+
+}
+
+
+.quicklinks li a{
+    color: purple;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks li a:hover{
+    color: white;
+}
+
+
+.top-items li a{
+    text-decoration: none;
+    color: gold;
+
+}
+
+
+.navbar-brand{
+    text-decoration: none;
+    color: gold;
+
+}
+
+.info{
+    position: relative;
+
+}
+
+
+.info li{
+    display: grid;
+    grid-template-columns: 20px 1fr ;
+    margin-bottom: 16px;
+}
+
+
+
+.info li span:nth-child(1){
+    color:purple;
+    font-size: 20px;
+}
+
+
+.info li span{
+    color:purple ;
+}
+
+
+.info a{
+    color: purple;
+    text-decoration: none;
+
+}
+
+
+.info a:hover{
+    color: white;
+}
+
+
+.copyright-text{
+    width: 150%;
+    background: purple;
+    padding: 8px 100px;
+    text-align: center;
+    color: #fff;
+}
+
+
+@media (max-width:991px){
+    footer{
+        padding: 40px  ;
+
+    }
+    footer.page-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width:768px)
+{
+    footer.page-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
