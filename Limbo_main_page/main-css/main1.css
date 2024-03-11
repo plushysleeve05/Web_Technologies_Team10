@@ -1,0 +1,33 @@
+.carousel-item  {
+    background-image: url("../../home/images/i4.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.container-marketing {
+    background-image: url("../new_imgs/p1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* Add backdrop-filter for blur effect */
+    backdrop-filter: blur(100px); /* Adjust the blur amount as needed */
+}
+
+.options-container {
+    height: 30vh;
+    display: flex; /* Add this line to make it a flex container */
+    align-items: center;
+    justify-content: center; /* Center the contents horizontally */
+}
+.space{
+    height: 10vh;
+}
+
+rect{
+    height: 100vh;
+}
+
+
+
+
