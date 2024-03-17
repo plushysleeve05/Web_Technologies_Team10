@@ -3,21 +3,69 @@
   <head><script src="../assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.122.0">
-    <title>Blog Template · Bootstrap v5.3</title>
+    <meta name="author" content="ayo">
+    <title>Limbo Music Community</title>
+
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
 
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- table styles -->
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylestable.css">
+
 
     <style>
+
+      .music-container{
+            width: 70vw;;
+            margin: 0px;
+        }
+
+        #ratingandcomment{
+            border: 2px solid;
+        }
+        #song-detail{
+            border: 2px solid green;
+            width: 40vw;
+            display: flex;
+            justify-content: space-between ;
+        }
+        #song-detail1{
+            border: 2px solid yellow;
+            margin:10px;
+            padding:10px;
+            width:50%;
+            height: 20vh;
+            float: left;
+        }
+        #song-detail2{
+            margin:10px;
+            padding:10px;
+            border:2px solid red;
+            width:50%;
+            height: 20vh;
+            float: right;
+        }
+
+        #song-details3{
+            border:2px solid teal;
+            width:50%;
+            height: 5vh;
+            margin: 100px 0 0 0;
+        }
+
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -183,8 +231,8 @@
 
   <div class="nav-scroller py-1 mb-3 border-bottom">
     <nav class="nav nav-underline justify-content-between">
-      <a class="nav-item nav-link link-body-emphasis active" href="../../home/home/homepage.html">Home</a>
-      <a class="nav-item nav-link link-body-emphasis" href="../../home/home/login.html">Login</a>
+      <a class="nav-item nav-link link-body-emphasis active" href="../../home/homepage.html">Home</a>
+      <a class="nav-item nav-link link-body-emphasis" href="../../home/login.html">Login</a>
       <a class="nav-item nav-link link-body-emphasis" href="../carousel/main.html">Add to Community</a>
     </nav>
   </div>
@@ -203,13 +251,32 @@
             <img src="../../home/images/i7.png" class="d-block w-100" style="height: 65vh; object-fit: cover;" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="../../home/images/" class="d-block w-100" style="height: 65vh; object-fit: cover;" alt="...">
+          <img src="../../home/images/c1.jpeg" class="d-block w-100" style="height: 65vh; object-fit: cover;" alt="...">
       </div>
+      <div class="carousel-item">
+        <img src="../../home/images/c2.jpeg" class="d-block w-100" style="height: 65vh; object-fit: cover;" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../../home/images/c3.jpeg" class="d-block w-100" style="height: 65vh; object-fit: cover;" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../../home/images/c4.jpeg" class="d-block w-100" style="height: 65vh; object-fit: cover;" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../../home/images/c5.jpeg" class="d-block w-100" style="height: 65vh; object-fit: cover;" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../../home/images/c6.jpeg" class="d-block w-100" style="height: 65vh; object-fit: cover;" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../../home/images/c7.jpeg" class="d-block w-100" style="height: 65vh; object-fit: cover;" alt="...">
+    </div>
     </div>
 </div>
-
-
-  <div class="row mb-2">
+<br>
+<br>
+<br>
+  <!-- <div class="row mb-2">
     <div class="col-md-6">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
@@ -244,7 +311,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="row g-5">
     <div class="col-md-8">
@@ -252,57 +319,31 @@
         From the Firehose
       </h3>
 
-      
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-      <article class="blog-post">
-        <h2 class="display-5 link-body-emphasis mb-1">Another blog post</h2>
-        <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
 
-        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-        <blockquote>
-          <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
-        </blockquote>
-        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-        <h3>Example table</h3>
-        <p>And don't forget about tables in these posts:</p>
-        <table class="table">
-          <thead>
+
+<div class="music-container">
+    <table class="table table-striped custom-table">
+        <thead>
             <tr>
-              <th>Name</th>
-              <th>Upvotes</th>
-              <th>Downvotes</th>
+                <th scope="col">SongID</th>
+                <th scope="col">Title</th>
+                <th scope="col">ReleaseDate</th>
+                <th scope="col">Genre</th>
+                <th scope="col">Album</th>
+                <th scope="col">ArtistName</th>
+                <th scope="col">General Thoughts</th>
+                <th scope="col">Link</th>
             </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Alice</td>
-              <td>10</td>
-              <td>11</td>
-            </tr>
-            <tr>
-              <td>Bob</td>
-              <td>4</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>Charlie</td>
-              <td>7</td>
-              <td>9</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Totals</td>
-              <td>21</td>
-              <td>23</td>
-            </tr>
-          </tfoot>
-        </table>
+        </thead>
+        
+        </tbody>
+    </table>
+</div>
 
         <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
-      </article>
 
-      <article class="blog-post">
         <h2 class="display-5 link-body-emphasis mb-1">New feature</h2>
         <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
 
@@ -313,7 +354,6 @@
           <li>Third list item to close it out</li>
         </ul>
         <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
-      </article>
 
       <nav class="blog-pagination" aria-label="Pagination">
         <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
@@ -322,13 +362,7 @@
 
     </div>
 
-    <div class="col-md-4">
-      <div class="position-sticky" style="top: 2rem;">
-        <div class="p-4 mb-3 bg-body-tertiary rounded">
-          <h4 class="fst-italic">About</h4>
-          <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
-        </div>
-
+    <div class="col-md-4" >
         <div>
           <h4 class="fst-italic">Recent posts</h4>
           <ul class="list-unstyled">
@@ -361,37 +395,8 @@
             </li>
           </ul>
         </div>
-
-        <div class="p-4">
-          <h4 class="fst-italic">Archives</h4>
-          <ol class="list-unstyled mb-0">
-            <li><a href="#">March 2021</a></li>
-            <li><a href="#">February 2021</a></li>
-            <li><a href="#">January 2021</a></li>
-            <li><a href="#">December 2020</a></li>
-            <li><a href="#">November 2020</a></li>
-            <li><a href="#">October 2020</a></li>
-            <li><a href="#">September 2020</a></li>
-            <li><a href="#">August 2020</a></li>
-            <li><a href="#">July 2020</a></li>
-            <li><a href="#">June 2020</a></li>
-            <li><a href="#">May 2020</a></li>
-            <li><a href="#">April 2020</a></li>
-          </ol>
-        </div>
-
-        <div class="p-4">
-          <h4 class="fst-italic">Elsewhere</h4>
-          <ol class="list-unstyled">
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-          </ol>
-        </div>
-      </div>
     </div>
   </div>
-
 </main>
 
 <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
