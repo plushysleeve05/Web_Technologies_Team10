@@ -337,7 +337,16 @@
                 <th scope="col">Link</th>
             </tr>
         </thead>
-        
+        <?php
+          include '../../functions/getRecords.php';
+
+          $rows = fetchRowsFromDatabase(); // Fetch rows from the database
+
+          // Loop through data and generate table rows
+          foreach ($rows as $row) {
+              echo generateTableRow($row);
+          }
+        ?>
         </tbody>
     </table>
 </div>
