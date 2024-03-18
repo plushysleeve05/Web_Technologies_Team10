@@ -11,7 +11,7 @@ This guide provides step-by-step instructions for running the project on a live 
 - Basic knowledge of uploading files to a server.
 
 ### 1. Upload Files:
-- Using FTP or a file manager, upload all project files to your live server.
+- Using FTP or a file manager, upload all project files(Limbo foler from the repo) to your live server.
 - Maintain the directory structure during the upload process.
 
 ### 2. Configuring Server:
