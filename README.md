@@ -6,6 +6,8 @@ https://github.com/plushysleeve05/Web_Technologies_Team10
 
 This guide provides step-by-step instructions for running the project on a live server.
 
+The main files for this web site are in the foler named **Limbo**
+
 ### Prerequisites:
 - Access to a live server environment.
 - Basic knowledge of uploading files to a server.
