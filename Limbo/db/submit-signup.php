@@ -9,39 +9,29 @@ $email = $_POST['email'];
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-// Validate form fields
 if (empty($email) || empty($username) || empty($password)) {
     die("All fields are required");
 }
 
-// Hash the password
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-// Check if the user already exists
-$stmt = $conn->prepare("SELECT UserID FROM user WHERE Email = ? OR Username = ?");
-$stmt->bind_param("ss", $email, $username);
+$stmt = $conn->prepare("SELECT UserID FROM user WHERE Username = ?");
+$stmt->bind_param("s", $username);
 $stmt->execute();
 $stmt->store_result();
 
 if ($stmt->num_rows > 0) {
-    // User already exists, redirect to login page
-    header("Location: ../home/login.html");
-    exit;
-}
-
-$stmt->close();
-
-// Insert the new user
-$stmt = $conn->prepare("INSERT INTO user (Username, Email, Password) VALUES (?, ?, ?)");
-$stmt->bind_param("sss", $username, $email, $hashedPassword);
-
-if ($stmt->execute()) {
-    echo "Sign up successful!";
-    // Redirect to the Community Page
-    header("Location: ../Limbo_main_page/blog/Community Page.php");
-    exit;
+    // Username already exists, reload sign-up page with error message
+    echo "<script>window.location.href = '../home/signup.php?error=Username%20already%20exists.%20Please%20choose%20a%20different%20username';</script>";
 } else {
-    echo "Error: " . $stmt->error;
+    $stmt = $conn->prepare("INSERT INTO user (Username, Email, Password) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $username, $email, $hashedPassword);
+
+    if ($stmt->execute()) {
+        header('Location: ../home/login.php');
+    } else {
+        echo "<script>alert('Error: " . $stmt->error . "');</script>";
+    }
 }
 
 $stmt->close();

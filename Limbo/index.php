@@ -60,11 +60,12 @@
                 <div class="limit-box">
                   <nav class="main-menu ">
                     <ul class="menu-area-main">
-                      <li class="active"> <a href="idex.html">Home</a> </li>
-                      <li> <a href="../Limbo/home/signup.html">Sign-up</a> </li>
-                        <li > <a   href="../Limbo/home/login.html">login</a> </li>
-                      <li  > <a  class="last_manu" href="#"><img src="images/search_icon.png" alt="#" /></a> </li>
-                      
+                      <li class="active"> <a href="idex.php">Home</a> </li>
+                      <li> <a href="../Limbo/home/signup.php">Sign-up</a> </li>
+                      <li > <a   href="../Limbo/home/login.php">login</a> </li>
+                      <li > <a   href="../Limbo/Limbo_main_page/blog/Community Page.php">View Songs and Playlist</a> </li>
+                      <li > <a   href="../Limbo/Limbo_main_page/carousel/main.php">Add Song and Playlist</a> </li>
+                      <li> </li>
                      </ul>
                    </nav>
                 
@@ -95,7 +96,7 @@
                       <span>LIMBO</span>
                       <h1>MUSIC COMMUNITY</h1>
                       <p>Community Crescendo: Where Every Note Finds Its Echo 🎵 | Embracing Harmony, Building Bonds | Unite in the Melodic Tapestry of Our Community | Notes of Connection, Rhythms of Togetherness | Join us in Crafting the Symphony of Shared Musical Journeys!</p>
-                      <a href="../Limbo/home/signup.html">Join The Community</a> 
+                      <a href="../Limbo/home/signup.php">Join The Community</a> 
                     </div>
                   </div>
                 </div>
@@ -115,7 +116,7 @@
         <div class="about-box">
           <h2>About Us</h2>
           <p>Step into our music sanctuary, a space where melodies intersect with opinions. We're dedicated to nurturing a dynamic community of music lovers who not only relish the joy of listening but also revel in articulating their thoughts on the beats that move them. Every song is a narrative, and every listener a storyteller. Join us in celebrating the diversity of musical encounters, share your perspectives on favorite tracks, and become part of a community where the language of music transcends boundaries. Your voice adds to the harmonious symphony of shared experiences in our music-sharing haven.</p>
-          <a href="../Limbo/home/signup.html"> Join the Community </a>
+          <a href="../Limbo/home/signup.php"> Join the Community </a>
         </div>
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -142,7 +143,7 @@
             <h2>Playlist Harmony</h2>
           </div>
           <p>Explore a unique musical journey with our exclusive playlist sharing feature. Unlike others, we foster a vibrant community beyond listening. Curate, showcase, and exchange personalized music seamlessly. Join us in elevating the art of playlist curation for a symphony of diverse musical experiences!</p>
-          <a href="../Limbo/home/signup.html">Share Your Playlist!</a>
+          <a href="../Limbo/home/signup.php">Share Your Playlist!</a>
         </div>
       </div> 
     

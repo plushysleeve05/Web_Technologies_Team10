@@ -1,3 +1,16 @@
+<?php
+// Include the session.php file to initialize session
+require_once '../../functions/session.php';
+
+// Check if the user is not logged in
+if (!isset($_SESSION['username'])) {
+    // Redirect the user to the login page
+    header("Location: ../../../../home/login.php");
+    exit; // Make sure to stop further execution after redirecting
+}
+?>
+
+
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head><script src="../assets/js/color-modes.js"></script>
