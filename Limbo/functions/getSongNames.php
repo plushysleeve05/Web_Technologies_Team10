@@ -43,8 +43,7 @@ function getSongNames() {
     return $songTitles;
 }
 
-$songNames = getSongNames();
-
+$songTitles = getSongNames();
 // Example usage:
 // foreach ($songNames as $songName) {
 //     echo $songName . "<br>";
