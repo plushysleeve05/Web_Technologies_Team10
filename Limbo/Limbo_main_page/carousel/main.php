@@ -1,3 +1,16 @@
+<?php
+// Include the session.php file to initialize session
+require_once '../../functions/session.php';
+
+// Check if the user is not logged in
+if (!isset($_SESSION['username'])) {
+    // Redirect the user to the login page
+    header("Location: ../../../../home/login.php");
+    exit; // Make sure to stop further execution after redirecting
+}
+?>
+
+
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head><script src="../assets/js/color-modes.js"></script>
@@ -165,9 +178,6 @@
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../../index.php">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../../../Limbo/home/userprofile.php">User Profile</a>
           </li>
       </div>
     </div>
