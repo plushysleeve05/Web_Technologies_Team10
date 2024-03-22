@@ -247,6 +247,11 @@ if (!isset($_SESSION['username'])) {
       <a class="nav-item nav-link link-body-emphasis active" href="../../index.php">Home</a>
       <h3>LIMBO</h3>
      <a class="nav-item nav-link link-body-emphasis" href="../carousel/main.php">Add to Community</a>
+     <form action="../../functions/logout.php" method="post">
+    <button type="submit" class="btn btn-primary">
+      LOG-OUT
+    </button>
+</form>
     </nav>
   </div>
 </div>

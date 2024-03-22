@@ -1,6 +1,5 @@
 <?php
-require_once '../functions/session.php';
-
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     include 'config.php';
@@ -37,8 +36,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verify password
     if (password_verify($password, $row['Password'])) {
         // Password is correct, redirect to success page
-        $_SESSION['username'] = $email; 
         header("Location: ../Limbo_main_page/blog/Community Page.php");
+        $_SESSION['username'] = $email; 
         exit;
     } else {
         // Password is incorrect
