@@ -309,7 +309,7 @@ if (!isset($_SESSION['username'])) {
     <table class="table table-striped custom-table"  id="myTable">
         <thead>
             <tr>
-                <th scope="col">SongID</th>
+                <!-- <th scope="col">SongID</th> -->
                 <th scope="col">Title</th>
                 <th scope="col">ReleaseDate</th>
                 <th scope="col">Genre</th>

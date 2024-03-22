@@ -12,7 +12,7 @@ function fetchRowsFromDatabase() {
     } 
 
     // Prepare SQL query
-    $query = "SELECT SongID, Title, ReleaseDate, Genre, Album, ArtistName, GeneralThoughts, LinkToSong, Rating FROM song";
+    $query = "SELECT Title, ReleaseDate, Genre, Album, ArtistName, GeneralThoughts, LinkToSong, Rating FROM song";
 
     // Execute the query
     $result = mysqli_query($conn, $query);
@@ -47,7 +47,6 @@ function generateTableRow($rowData) {
     // Convert the rating to stars representation using HTML entities
 
     return "<tr>" .
-        "<td>{$rowData['SongID']}</td>" .
         "<td>{$rowData['Title']}</td>" .
         "<td>{$rowData['ReleaseDate']}</td>" .
         "<td>{$rowData['Genre']}</td>" .

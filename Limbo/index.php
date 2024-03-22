@@ -1,6 +1,4 @@
-<?php
-session_destroy();
-?>
+
 
 
 <!DOCTYPE html>
@@ -32,28 +30,6 @@ session_destroy();
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 
-  <script>
-    // Check if user is logged in (you may need to replace this with your actual logic)
-    $isLoggedIn = isset($_SESSION['username']);
-    // Select the logout link
-    const logoutLink = document.getElementById('logout-link');
-
-    // If user is logged in, display the logout link
-    if (isLoggedIn) {
-        logoutLink.style.display = 'inline'; // Use 'inline' to display as inline element
-    }
-
-    // Add click event listener to logout link
-    logoutLink.addEventListener('click', (event) => {
-        // Prevent default link behavior (i.e., navigating to '#')
-        event.preventDefault();
-
-        // Perform logout functionality here (e.g., destroy session, clear tokens)
-        // Redirect the user to the logout page or perform any other necessary actions
-        alert('Logout functionality will go here');
-        });
-  </script>
-</head>
 <!-- body -->
 
 <body class="main-layout">
@@ -87,7 +63,7 @@ session_destroy();
                       <li class="active"> <a href="idex.php">Home</a> </li>
                       <li> <a href="../Limbo/home/signup.php">Sign-up</a> </li>
                       <li > <a   href="../Limbo/home/login.php">login</a> </li>
-                      <li > <a   href="../Limbo/functions/logout.php" style="display: none;" id="logout-link">logout</a> </li>
+                      <li > <a   href="../Limbo/functions/logout.php" style="display: block;" id="logout-link">logout</a> </li>
                       <li > <a   href="../Limbo/Limbo_main_page/blog/Community Page.php">View Songs and Playlist</a> </li>
                       <li > <a   href="../Limbo/Limbo_main_page/carousel/main.php">Add Song and Playlist</a> </li>
                       <li> </li>
