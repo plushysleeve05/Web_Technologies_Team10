@@ -12,7 +12,7 @@ function fetchRowsFromDatabasep() {
     } 
 
     // Prepare SQL query
-    $query = "SELECT RatingID, SongName, Lyrics, Melody, Vocals, OverallEnjoyment FROM Ratings";
+    $query = "SELECT RatingID, SongName, Lyrics, Melody, Vocals, OverallEnjoyment FROM ratings";
 
     // Execute the query
     $result = mysqli_query($conn, $query);
