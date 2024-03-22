@@ -305,11 +305,11 @@ if (!isset($_SESSION['username'])) {
 
 
 
-<div class="music-container" style="height: 50vh; overflow-y: auto;">
-    <table class="table table-striped custom-table"  id="myTable">
+        <div class="music-container" style="height: 50vh; overflow-y: auto;">
+    <!-- First table -->
+    <table class="table table-striped custom-table" id="myTable">
         <thead>
             <tr>
-                <!-- <th scope="col">SongID</th> -->
                 <th scope="col">Title</th>
                 <th scope="col">ReleaseDate</th>
                 <th scope="col">Genre</th>
@@ -318,21 +318,69 @@ if (!isset($_SESSION['username'])) {
                 <th scope="col">General Thoughts</th>
                 <th scope="col">Link</th>
                 <th scope="col">Rating</th>
-
             </tr>
         </thead>
         <?php
-          include '../../functions/getRecords.php';
-          // Loop through data and generate table rows
-          foreach ($rows as $row) {
-              echo generateTableRow($row);
-          }
+        include '../../functions/getRecords.php';
+        // Loop through data and generate table rows
+        foreach ($rows as $row) {
+            echo generateTableRow($row);
+        }
         ?>
         </tbody>
     </table>
 </div>
 
-        <h3>Scroll back up to add your song!</h3>
+<h3>Ratings and playlist:</h3>
+
+<div class="row" style="width: 70vw;">
+    <!-- Second table -->
+    <div class="music-container" style="height: 50vh; overflow: auto; width: 50%;">
+        <table class="table table-striped custom-table" id="myTable2">
+            <thead>
+                <tr>
+                    <th scope="col">Rating ID</th>
+                    <th scope="col">Song Name</th>
+                    <th scope="col">Lyrics</th>
+                    <th scope="col">Melody</th>
+                    <th scope="col">Vocals</th>
+                    <th scope="col">Overall Enjoyment</th>
+                </tr>
+            </thead>
+            <?php
+                include '../../functions/getRatings.php';
+                foreach ($rows as $row) {
+                    echo generateTableRowp($row);
+                }
+                ?>
+        </table>
+    </div>
+
+    <!-- Third table -->
+    <div class="music-container" style="height: 50vh; overflow: auto; width: 50%;">
+        <table class="table table-striped custom-table" id="myTable3">
+            <thead>
+                <tr>
+                    <th scope="col">Playlist ID</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Link to Playlist</th>
+                </tr>
+            </thead>
+            <?php
+                include '../../functions/getPlaylists.php';
+                $playlist = getPlaylist();
+                foreach ($playlist as $row) { ?>
+                    <tr>
+                        <td><?php echo $row['PlaylistID']; ?></td>
+                        <td><?php echo $row['Username']; ?></td>
+                        <td><a href="<?php echo $row['LinktoPlaylist']; ?>" target="_blank">Go to Playlist</a></td>
+                    </tr>
+                <?php } ?>
+        </table>
+    </div>
+</div>
+
+        
         
 
 

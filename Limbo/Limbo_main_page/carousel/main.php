@@ -344,63 +344,64 @@ $songTitles = getSongNames();
 
           <h4>RATE THE SONG LYRICS:</h4>
             <div class="rate">
-              <input type="radio" id="star5" name="rate" value="5" />
-              <label for="star5" title="text">5 stars</label>
-              <input type="radio" id="star4" name="rate" value="4" />
-              <label for="star4" title="text">4 stars</label>
-              <input type="radio" id="star3" name="rate" value="3" />
-              <label for="star3" title="text">3 stars</label>
-              <input type="radio" id="star2" name="rate" value="2" />
-              <label for="star2" title="text">2 stars</label>
-              <input type="radio" id="star1" name="rate" value="1" />
-              <label for="star1" title="text">1 star</label>
+              <input type="radio" id="lyrics_star5" name="lyrics_rate" value="5" />
+              <label for="lyrics_star5" title="text">5 stars</label>
+              <input type="radio" id="lyrics_star4" name="lyrics_rate" value="4" />
+              <label for="lyrics_star4" title="text">4 stars</label>
+              <input type="radio" id="lyrics_star3" name="lyrics_rate" value="3" />
+              <label for="lyrics_star3" title="text">3 stars</label>
+              <input type="radio" id="lyrics_star2" name="lyrics_rate" value="2" />
+              <label for="lyrics_star2" title="text">2 stars</label>
+              <input type="radio" id="lyrics_star1" name="lyrics_rate" value="1" />
+              <label for="lyrics_star1" title="text">1 star</label>
             </div>
             <br><br>
 
-          <h4>RATE THE SONG VOCALS:</h4>
+            <h4>RATE THE SONG VOCALS:</h4>
             <div class="rate">
-              <input type="radio" id="star5" name="rate" value="5" />
-              <label for="star5" title="text">5 stars</label>
-              <input type="radio" id="star4" name="rate" value="4" />
-              <label for="star4" title="text">4 stars</label>
-              <input type="radio" id="star3" name="rate" value="3" />
-              <label for="star3" title="text">3 stars</label>
-              <input type="radio" id="star2" name="rate" value="2" />
-              <label for="star2" title="text">2 stars</label>
-              <input type="radio" id="star1" name="rate" value="1" />
-              <label for="star1" title="text">1 star</label>
+              <input type="radio" id="vocals_star5" name="vocals_rate" value="5" />
+              <label for="vocals_star5" title="text">5 stars</label>
+              <input type="radio" id="vocals_star4" name="vocals_rate" value="4" />
+              <label for="vocals_star4" title="text">4 stars</label>
+              <input type="radio" id="vocals_star3" name="vocals_rate" value="3" />
+              <label for="vocals_star3" title="text">3 stars</label>
+              <input type="radio" id="vocals_star2" name="vocals_rate" value="2" />
+              <label for="vocals_star2" title="text">2 stars</label>
+              <input type="radio" id="vocals_star1" name="vocals_rate" value="1" />
+              <label for="vocals_star1" title="text">1 star</label>
             </div>
             <br><br>
 
-          <h4>RATE THE SONG MELODY:</h4>
+            <h4>RATE THE SONG MELODY:</h4>
             <div class="rate">
-              <input type="radio" id="star5" name="rate" value="5" />
-              <label for="star5" title="text">5 stars</label>
-              <input type="radio" id="star4" name="rate" value="4" />
-              <label for="star4" title="text">4 stars</label>
-              <input type="radio" id="star3" name="rate" value="3" />
-              <label for="star3" title="text">3 stars</label>
-              <input type="radio" id="star2" name="rate" value="2" />
-              <label for="star2" title="text">2 stars</label>
-              <input type="radio" id="star1" name="rate" value="1" />
-              <label for="star1" title="text">1 star</label>
+              <input type="radio" id="melody_star5" name="melody_rate" value="5" />
+              <label for="melody_star5" title="text">5 stars</label>
+              <input type="radio" id="melody_star4" name="melody_rate" value="4" />
+              <label for="melody_star4" title="text">4 stars</label>
+              <input type="radio" id="melody_star3" name="melody_rate" value="3" />
+              <label for="melody_star3" title="text">3 stars</label>
+              <input type="radio" id="melody_star2" name="melody_rate" value="2" />
+              <label for="melody_star2" title="text">2 stars</label>
+              <input type="radio" id="melody_star1" name="melody_rate" value="1" />
+              <label for="melody_star1" title="text">1 star</label>
             </div>
             <br><br>
-            
-          <h4>OVERALL ENJOYMENT:</h4>
+
+            <h4>OVERALL ENJOYMENT:</h4>
             <div class="rate">
-              <input type="radio" id="star5" name="rate" value="5" />
-              <label for="star5" title="text">5 stars</label>
-              <input type="radio" id="star4" name="rate" value="4" />
-              <label for="star4" title="text">4 stars</label>
-              <input type="radio" id="star3" name="rate" value="3" />
-              <label for="star3" title="text">3 stars</label>
-              <input type="radio" id="star2" name="rate" value="2" />
-              <label for="star2" title="text">2 stars</label>
-              <input type="radio" id="star1" name="rate" value="1" />
-              <label for="star1" title="text">1 star</label>
+              <input type="radio" id="enjoyment_star5" name="enjoyment_rate" value="5" />
+              <label for="enjoyment_star5" title="text">5 stars</label>
+              <input type="radio" id="enjoyment_star4" name="enjoyment_rate" value="4" />
+              <label for="enjoyment_star4" title="text">4 stars</label>
+              <input type="radio" id="enjoyment_star3" name="enjoyment_rate" value="3" />
+              <label for="enjoyment_star3" title="text">3 stars</label>
+              <input type="radio" id="enjoyment_star2" name="enjoyment_rate" value="2" />
+              <label for="enjoyment_star2" title="text">2 stars</label>
+              <input type="radio" id="enjoyment_star1" name="enjoyment_rate" value="1" />
+              <label for="enjoyment_star1" title="text">1 star</label>
             </div>
             <br><br>
+
 
           <button type="submit" class="btn btn-primary">Submit</button>
             <br><br><br>
@@ -420,11 +421,12 @@ $songTitles = getSongNames();
         <h2 class="featurette-heading fw-normal lh-2"> Got a PLaylist? <span class="text-body-secondary">Share it with the WORLD.</span></h2>
         <p class="lead">Embark on a musical odyssey with me! Ready to share your favorite playlist? The stage is yours to spread the rhythm and share the beats. Don't keep the magic to yourself – hit play, then share the melody with the world. Who's joining your musical voyage? Share the playlist link to the platform where the magic unfolds, and let the symphony echo far and wide.</p>
 
-      <form action="">
+      <form action="../../functions/submit-playlist.php" method="post">
         <!-- Playlist Link -->
         <label for="artistAchievements" class="form-label">Link to Playlist(Spotify, Apple music, etc..):</label>
         <input type="text" class="form-control" id="songLink" name="songLink" maxlength="255" required>
-
+              <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
       </div>
       <div class="col-md-5">

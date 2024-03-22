@@ -2,20 +2,16 @@
 // Include the database configuration file
 require_once '../db/config.php';
 
-// Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Validate and sanitize inputs
     $songName = mysqli_real_escape_string($conn, $_POST['songName']);
-    $lyrics = mysqli_real_escape_string($conn, $_POST['lyrics']);
-    $vocals = mysqli_real_escape_string($conn, $_POST['vocals']);
-    $melody = mysqli_real_escape_string($conn, $_POST['melody']);
-    $overallEnjoyment = mysqli_real_escape_string($conn, $_POST['overallEnjoyment']);
+    $lyrics_rate = mysqli_real_escape_string($conn, $_POST['lyrics_rate']);
+    $vocals_rate = mysqli_real_escape_string($conn, $_POST['vocals_rate']);
+    $melody_rate = mysqli_real_escape_string($conn, $_POST['melody_rate']);
+    $enjoyment_rate = mysqli_real_escape_string($conn, $_POST['enjoyment_rate']);
 
-    // Insert data into the database
-    $query = "INSERT INTO Ratings (SongName, Lyrics, Vocals, Melody, OverallEnjoyment) 
-              VALUES ('$songName', '$lyrics', '$vocals', '$melody', '$overallEnjoyment')";
+    $query = "INSERT INTO ratings (SongName, Lyrics, Vocals, Melody, OverallEnjoyment) 
+              VALUES ('$songName', '$lyrics_rate', '$vocals_rate', '$melody_rate', '$enjoyment_rate')";
 
-    // Execute query
     if (mysqli_query($conn, $query)) {
         echo "Ratings submitted successfully!";
     } else {
